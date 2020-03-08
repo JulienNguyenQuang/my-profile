@@ -1,0 +1,140 @@
+body, h1, p {
+  font-family: "Helvetica";
+}
+
+body {
+  font-weight: 100;
+  font-size: 40px;
+  background: #444;
+}
+
+h1 {
+  font-size: 75px;
+  font-weight: 300;
+}
+
+p {
+  font-weight: 100;
+  font-size: 40px;
+}
+
+.navBar {
+  margin: -10px;
+  margin-bottom: auto;
+  overflow-y: scroll;
+  background-color: #000;
+  box-shadow: 0px 5px 10px rgb(0,0,0,0.5);
+}
+
+.navBar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.navBar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navBar a.highlighted {
+  font-weight: 500;
+  color: black;
+  background-color: #B2B2FF;
+}
+
+.navBar a.active {
+  color: white;
+  background-color: black;
+  border-bottom: 3px solid #B2B2FF;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+.cardCol {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+}
+
+.cardIMG {
+  background-image: url('images/juju.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+}
+
+.cardIMG1 {
+  background-image: url('images/sanseb.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+}
+
+.cardIMG2 {
+  background-image: url('images/maroc.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+}
+
+.cardIMG3 {
+  background-image: url('images/lewagon.png');
+  background-size: cover;
+  background-color: white;
+  background-position: center;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.row > * {
+  flex: 1 50%;
+}
+
+/*ANIMATIONS*/
+@keyframes textColor {
+  from { color: blue;}
+  to { color: red;}
+}
+
+@keyframes slidein {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+  
+  to {
+    margin-left:0%;
+    width:100%;
+  }
+}
